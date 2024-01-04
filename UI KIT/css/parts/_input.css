@@ -1,0 +1,57 @@
+/* BASE STYLES */
+.custom-input {
+    position: relative;
+    width: 520px;
+    margin-right: 20px;
+}
+
+.custom-input:last-child {
+    margin-right: 0;
+}
+
+/* INPUT STYLES */
+.custom-input__input {
+    width: 450px;
+    border-radius: 200px;
+    padding: 15px 80px 15px 50px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 3px solid #404040;
+    color: #fff;
+}
+
+.custom-input__input:focus {
+    border-color: #7b7b7b;
+    outline: none;
+}
+
+.custom-input__input:not(:has(~ .bx)) {
+    padding-left: 20px;
+}
+
+/* ICON STYLES */
+.custom-input__icon {
+    color: #404040;
+    position: absolute;
+    font-size: 30px;
+    z-index: 100;
+    top: calc(50%);
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+/* BUTTON STYLES */
+.custom-input__btn {
+    border-radius: 200px;
+    position: absolute;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+
+.custom-input__btn:hover {
+    z-index: 100;
+}
